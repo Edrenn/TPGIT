@@ -29,6 +29,18 @@ public class User {
 	public void setMotDePasse(String motDePasse) {
 		this.motDePasse = motDePasse;
 	}
+	
+	public void User() {
+		
+	}
+	
+	public void User(String nom,String prenom,String login,String motDePasse){
+		this.nom = nom;
+		this.prenom = prenom;
+		this.login = login;
+		this.login = login;
+		
+	}
 
 	
 }
