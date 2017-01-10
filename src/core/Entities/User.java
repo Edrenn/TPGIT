@@ -5,6 +5,12 @@ public class User {
 	String prenom;
 	String login;
 	String motDePasse;
+
+	public User() {
+	} 
+
+	arrayList Droits = new arrayList();
+
 	public String getNom() {
 		return nom;
 	}

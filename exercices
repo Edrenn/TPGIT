@@ -1,0 +1,1835 @@
+
+Utilisateur@PC-Acer MINGW64 ~ (master)
+$ cd Desktop
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop (master)
+$ cd TPGIT1
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ dir
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ ls -la
+total 4
+drwxr-xr-x 1 Utilisateur 197121 0 janv. 10 10:16 ./
+drwxr-xr-x 1 Utilisateur 197121 0 janv. 10 10:16 ../
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../../.android/
+        ../../.argouml/
+        ../../.bash_history
+        ../../.nuget/
+        ../../AppData/
+        ../../Contacts/
+        ../
+        ../../Documents/
+        ../../Downloads/
+        ../../Favorites/
+        ../../IntelGraphicsProfiles/
+        ../../Links/
+        ../../Music/
+        ../../NTUSER.DAT
+        ../../NTUSER.DAT{97e1de87-d6fa-11e1-be62-94c0340a1222}.TM.blf
+        ../../NTUSER.DAT{97e1de87-d6fa-11e1-be62-94c0340a1222}.TMContainer00000000000000000001.regtrans-ms
+        ../../NTUSER.DAT{97e1de87-d6fa-11e1-be62-94c0340a1222}.TMContainer00000000000000000002.regtrans-ms
+        ../../Pictures/
+        ../../Saved Games/
+        ../../Searches/
+        ../../Videos/
+        ../../ntuser.dat.LOG1
+        ../../ntuser.dat.LOG2
+        ../../ntuser.ini
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ ls -la
+total 4
+drwxr-xr-x 1 Utilisateur 197121 0 janv. 10 10:16 ./
+drwxr-xr-x 1 Utilisateur 197121 0 janv. 10 10:16 ../
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/Utilisateur/Desktop/TPGIT1/.git/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ ls -la
+total 8
+drwxr-xr-x 1 Utilisateur 197121 0 janv. 10 10:27 ./
+drwxr-xr-x 1 Utilisateur 197121 0 janv. 10 10:16 ../
+drwxr-xr-x 1 Utilisateur 197121 0 janv. 10 10:27 .git/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ ls -a
+./  ../  .git/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Readme.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git add Readme.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Readme.txt
+
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git commit -m"Add readme"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git config --global user.email "lucie.hacques@gmail.com"
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git config --global user.name "lucie.hacques"
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git commit -m"Add readme"
+[master (root-commit) 7370689] Add readme
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Readme.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git log
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+    Add readme
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git add Readme.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Readme.txt
+
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git commit -m"Add text to readme"
+[master 2605b0a] Add text to readme
+ 1 file changed, 1 insertion(+)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git log
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+
+    Add text to readme
+
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+    Add readme
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git log > log.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ ls -l
+total 2
+-rw-r--r-- 1 Utilisateur 197121 311 janv. 10 11:13 log.txt
+-rw-r--r-- 1 Utilisateur 197121  16 janv. 10 11:09 Readme.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ cat log.txt
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+
+    Add text to readme
+
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+    Add readme
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git reset log.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git add log.txt
+warning: LF will be replaced by CRLF in log.txt.
+The file will have its original line endings in your working directory.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ ^C
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   log.txt
+
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git reset log.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git add log.txt
+warning: LF will be replaced by CRLF in log.txt.
+The file will have its original line endings in your working directory.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git checkout log.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   log.txt
+
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git reset --hard log.txt
+fatal: Cannot do hard reset with paths.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git reset --hard
+HEAD is now at 2605b0a Add text to readme
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git log
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+
+    Add text to readme
+
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+    Add readme
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git rm Readme.txt
+rm 'Readme.txt'
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    Readme.txt
+
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git reset --hard
+HEAD is now at 2605b0a Add text to readme
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git remote add origin https://github.com/LucieHacques/TP1Git-do-delete.git
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 440 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/LucieHacques/TP1Git-do-delete.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git clone https://github.com/LucieHacques/TP1Git-do-delete.git
+Cloning into 'TP1Git-do-delete'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git branch -a
+* master
+  remotes/origin/master
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        TP1Git-do-delete/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git add TP1Git-do-delete/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   TP1Git-do-delete/Readme.txt
+
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git commit -m"add subfolder"
+[master 68e6ff9] add subfolder
+ 1 file changed, 1 insertion(+)
+ create mode 100644 TP1Git-do-delete/Readme.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ ls ./
+Readme.txt  TP1Git-do-delete/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ ls ./
+Readme.txt  TP1Git-do-delete/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ ls ./TP1Git-do-delete/
+Readme.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git add -A
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git add .
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git push origin master
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 273 bytes | 0 bytes/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/LucieHacques/TP1Git-do-delete.git
+   2605b0a..68e6ff9  master -> master
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ cd TP1Git-do-delete/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/TP1Git-do-delete (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/TP1Git-do-delete (master)
+$ git pull
+remote: Counting objects: 2, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 2 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), done.
+From https://github.com/LucieHacques/TP1Git-do-delete
+   2605b0a..68e6ff9  master     -> origin/master
+Updating 2605b0a..68e6ff9
+Fast-forward
+ TP1Git-do-delete/Readme.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 TP1Git-do-delete/Readme.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/TP1Git-do-delete (master)
+$ ls -l
+total 1
+-rw-r--r-- 1 Utilisateur 197121 16 janv. 10 11:34 Readme.txt
+drwxr-xr-x 1 Utilisateur 197121  0 janv. 10 11:43 TP1Git-do-delete/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/TP1Git-do-delete (master)
+$ cd..
+bash: cd..: command not found
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/TP1Git-do-delete (master)
+$ cd ..
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        TP1Git-do-delete/TP1Git-do-delete/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ gitk
+
+
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add Signed-off-by:
+    -m, --mainline <n>    parent number
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git log
+commit 68e6ff969449f04c59f771840569ff6e9c2adf4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:39:45 2017 +0100
+
+    add subfolder
+
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+
+    Add text to readme
+
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+    Add readme
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git revert ^C
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git revert 68e6ff969449f04c59f771840569ff6e9c2adf4d
+[master 7c92824] Revert "add subfolder"
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 TP1Git-do-delete/Readme.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        TP1Git-do-delete/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ ls TP1Git-do-delete/
+TP1Git-do-delete/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git add TP1Git-do-delete/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git reset --hard
+HEAD is now at 7c92824 Revert "add subfolder"
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git log
+commit 7c9282441540b3438b2a8979eb59b1e3d2f5dc27
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:49:37 2017 +0100
+
+    Revert "add subfolder"
+
+    This reverts commit 68e6ff969449f04c59f771840569ff6e9c2adf4d.
+
+commit 68e6ff969449f04c59f771840569ff6e9c2adf4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:39:45 2017 +0100
+
+    add subfolder
+
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+
+    Add text to readme
+
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+ ESCOC
+il.com>
+
+
+
+
+59f771840569ff6e9c2adf4d.
+
+c2adf4d
+il.com>
+
+
+
+
+f01cded
+il.com>
+
+
+
+
+c539f4d
+il.com>
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+il.com>
+
+
+
+
+59f771840569ff6e9c2adf4d.
+
+c2adf4d
+il.com>
+
+
+
+
+f01cded
+il.com>
+
+
+
+
+c539f4d
+il.com>
+
+
+ ESCOD
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:49:37 2017 +0100
+
+    Revert "add subfolder"
+
+    This reverts commit 68e6ff969449f04c59f771840569ff6e9c2adf4d.
+
+commit 68e6ff969449f04c59f771840569ff6e9c2adf4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:39:45 2017 +0100
+
+    add subfolder
+
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+
+    Add text to readme
+
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+ ESCOD
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:49:37 2017 +0100
+
+    Revert "add subfolder"
+
+    This reverts commit 68e6ff969449f04c59f771840569ff6e9c2adf4d.
+
+commit 68e6ff969449f04c59f771840569ff6e9c2adf4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:39:45 2017 +0100
+
+    add subfolder
+
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+
+    Add text to readme
+
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+ ESCOD
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:49:37 2017 +0100
+
+    Revert "add subfolder"
+
+    This reverts commit 68e6ff969449f04c59f771840569ff6e9c2adf4d.
+
+commit 68e6ff969449f04c59f771840569ff6e9c2adf4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:39:45 2017 +0100
+
+    add subfolder
+
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+
+    Add text to readme
+
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+ ESCOD
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:49:37 2017 +0100
+
+    Revert "add subfolder"
+
+    This reverts commit 68e6ff969449f04c59f771840569ff6e9c2adf4d.
+
+commit 68e6ff969449f04c59f771840569ff6e9c2adf4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:39:45 2017 +0100
+
+    add subfolder
+
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+
+    Add text to readme
+
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+ ESCOD
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Author: lucie.hacques <lucie.hacques@gmail.com>
+commit 7c9282441540b3438b2a8979eb59b1e3d2f5dc27
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:49:37 2017 +0100
+
+    Revert "add subfolder"
+
+    This reverts commit 68e6ff969449f04c59f771840569ff6e9c2adf4d.
+
+commit 68e6ff969449f04c59f771840569ff6e9c2adf4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:39:45 2017 +0100
+
+    add subfolder
+
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+
+    Add text to readme
+
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+:
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .metadata/
+        JockeyVSPoney/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git commit -m"add classes Jockey and Poney"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+        .metadata/
+        JockeyVSPoney/
+
+nothing added to commit but untracked files present
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .metadata/
+        JockeyVSPoney/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git add JockeyVSPoney/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   JockeyVSPoney/.classpath
+        new file:   JockeyVSPoney/.project
+        new file:   JockeyVSPoney/.settings/org.eclipse.jdt.core.prefs
+        new file:   JockeyVSPoney/bin/Jockey.class
+        new file:   JockeyVSPoney/bin/Poney.class
+        new file:   JockeyVSPoney/src/Jockey.java
+        new file:   JockeyVSPoney/src/Poney.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .metadata/
+
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git commit -m"add classes Jockey and Poney"
+[master 227b4ce] add classes Jockey and Poney
+ 7 files changed, 61 insertions(+)
+ create mode 100644 JockeyVSPoney/.classpath
+ create mode 100644 JockeyVSPoney/.project
+ create mode 100644 JockeyVSPoney/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 JockeyVSPoney/bin/Jockey.class
+ create mode 100644 JockeyVSPoney/bin/Poney.class
+ create mode 100644 JockeyVSPoney/src/Jockey.java
+ create mode 100644 JockeyVSPoney/src/Poney.java
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git clone https://github.com/LucieHacques/TP1Git-do-delete.git
+Cloning into 'TP1Git-do-delete'...
+remote: Counting objects: 8, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 8 (delta 0), reused 8 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git clone https://github.com/LucieHacques/TP1Git-do-delete.git
+fatal: destination path 'TP1Git-do-delete' already exists and is not an empty directory.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git clone https://github.com/Edrenn/git-cours.git
+Cloning into 'git-cours'...
+remote: Counting objects: 14, done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 14 (delta 1), reused 13 (delta 0), pack-reused 0
+Unpacking objects: 100% (14/14), done.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git push origin master
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (14/14), 2.19 KiB | 0 bytes/s, done.
+Total 14 (delta 0), reused 0 (delta 0)
+To https://github.com/LucieHacques/TP1Git-do-delete.git
+   68e6ff9..227b4ce  master -> master
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git log
+commit 227b4cedf931efb0ebfea5f9cf93a2517408baae
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 12:18:24 2017 +0100
+
+    add classes Jockey and Poney
+
+commit 7c9282441540b3438b2a8979eb59b1e3d2f5dc27
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:49:37 2017 +0100
+
+    Revert "add subfolder"
+
+    This reverts commit 68e6ff969449f04c59f771840569ff6e9c2adf4d.
+
+commit 68e6ff969449f04c59f771840569ff6e9c2adf4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:39:45 2017 +0100
+
+    add subfolder
+
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+:
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git pull
+Already up-to-date.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git log
+commit 227b4cedf931efb0ebfea5f9cf93a2517408baae
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 12:18:24 2017 +0100
+
+    add classes Jockey and Poney
+
+commit 7c9282441540b3438b2a8979eb59b1e3d2f5dc27
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:49:37 2017 +0100
+
+    Revert "add subfolder"
+
+    This reverts commit 68e6ff969449f04c59f771840569ff6e9c2adf4d.
+
+commit 68e6ff969449f04c59f771840569ff6e9c2adf4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:39:45 2017 +0100
+
+    add subfolder
+
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+:
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .metadata/
+        TP1Git-do-delete/
+        git-cours/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git commit -m"ajout Edrenn"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+        .metadata/
+        TP1Git-do-delete/
+        git-cours/
+
+nothing added to commit but untracked files present
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git add git-cours/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git commit -m"ajout Edrenn"
+[master d372879] ajout Edrenn
+ 3 files changed, 46 insertions(+)
+ create mode 100644 git-cours/Readme.txt
+ create mode 100644 git-cours/src/Jockey.java
+ create mode 100644 git-cours/src/Poney.java
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .metadata/
+        TP1Git-do-delete/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ git log
+commit d3728792160b13022894e166fa78bce283b2de70
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 13:37:01 2017 +0100
+
+    ajout Edrenn
+
+commit 227b4cedf931efb0ebfea5f9cf93a2517408baae
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 12:18:24 2017 +0100
+
+    add classes Jockey and Poney
+
+commit 7c9282441540b3438b2a8979eb59b1e3d2f5dc27
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:49:37 2017 +0100
+
+    Revert "add subfolder"
+
+    This reverts commit 68e6ff969449f04c59f771840569ff6e9c2adf4d.
+
+commit 68e6ff969449f04c59f771840569ff6e9c2adf4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:39:45 2017 +0100
+:
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ cd git-cours/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/git-cours (master)
+$ git checkout -b luciehacques
+Switched to a new branch 'luciehacques'
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/git-cours (luciehacques)
+$ cd ..
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ dir
+git-cours  JockeyVSPoney  Readme.txt  src  TP1Git-do-delete
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1 (master)
+$ cd JockeyVSPoney/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ dir
+bin  src
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   bin/Poney.class
+        modified:   src/Poney.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.metadata/
+        ../TP1Git-do-delete/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git add src/Poney.java
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git commit -m"modification Poney"
+[master 284b9c5] modification Poney
+ 1 file changed, 6 insertions(+)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git checkout luciehacques
+error: pathspec 'luciehacques' did not match any file(s) known to git.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git checkout -b luciehacques
+M       JockeyVSPoney/bin/Poney.class
+Switched to a new branch 'luciehacques'
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git status
+On branch luciehacques
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   bin/Poney.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.metadata/
+        ../TP1Git-do-delete/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git status
+On branch luciehacques
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   bin/Poney.class
+        modified:   src/Poney.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.metadata/
+        ../TP1Git-do-delete/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git add Poney.java
+fatal: pathspec 'Poney.java' did not match any files
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git add src/Poney.java
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git commit -m"modifi Poney"
+[luciehacques 7e77c8c] modifi Poney
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git status
+On branch luciehacques
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   bin/Poney.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.metadata/
+        ../TP1Git-do-delete/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git checkout master
+M       JockeyVSPoney/bin/Poney.class
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git merge luciehacques
+Updating 284b9c5..7e77c8c
+Fast-forward
+ JockeyVSPoney/src/Poney.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git push origin master
+To https://github.com/LucieHacques/TP1Git-do-delete.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/LucieHacques/TP1Git-do-delete.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git pull origin master
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 2), reused 5 (delta 2), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/LucieHacques/TP1Git-do-delete
+ * branch            master     -> FETCH_HEAD
+   227b4ce..0708843  master     -> origin/master
+Auto-merging JockeyVSPoney/src/Poney.java
+Merge made by the 'recursive' strategy.
+ JockeyVSPoney/src/Poney.java | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git push origin master
+Counting objects: 21, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (21/21), 2.30 KiB | 0 bytes/s, done.
+Total 21 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+To https://github.com/LucieHacques/TP1Git-do-delete.git
+   0708843..1b2ca9e  master -> master
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git checkout luciehacques
+M       JockeyVSPoney/bin/Poney.class
+Switched to branch 'luciehacques'
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git merge master
+Updating 7e77c8c..1b2ca9e
+Fast-forward
+ JockeyVSPoney/src/Poney.java | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git checkout master
+M       JockeyVSPoney/bin/Poney.class
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git pull origin master
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 2), reused 5 (delta 2), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/LucieHacques/TP1Git-do-delete
+ * branch            master     -> FETCH_HEAD
+   1b2ca9e..b0017f0  master     -> origin/master
+Updating 1b2ca9e..b0017f0
+Fast-forward
+ JockeyVSPoney/src/Poney.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git checkout luciehacques
+M       JockeyVSPoney/bin/Poney.class
+Switched to branch 'luciehacques'
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git merge master
+Updating 1b2ca9e..b0017f0
+Fast-forward
+ JockeyVSPoney/src/Poney.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git add src/Poney.java
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git commit -m"modification d'une ligne"
+[luciehacques e414620] modification d'une ligne
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git checkout master
+M       JockeyVSPoney/bin/Poney.class
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git merge luciehacques
+Updating b0017f0..e414620
+Fast-forward
+ JockeyVSPoney/src/Poney.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 498 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/LucieHacques/TP1Git-do-delete.git
+   b0017f0..e414620  master -> master
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git checkout luciehacques
+M       JockeyVSPoney/bin/Poney.class
+Switched to branch 'luciehacques'
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git status
+On branch luciehacques
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   bin/Poney.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.metadata/
+        bin/lucie.class
+        src/lucie.java
+        ../TP1Git-do-delete/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git add src/lucie.java
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git status
+On branch luciehacques
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   src/lucie.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   bin/Poney.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.metadata/
+        bin/lucie.class
+        ../TP1Git-do-delete/
+
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git commit -m"ajout d'un nouveau fichier"
+[luciehacques eec393c] ajout d'un nouveau fichier
+ 1 file changed, 6 insertions(+)
+ create mode 100644 JockeyVSPoney/src/lucie.java
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git checkout master
+M       JockeyVSPoney/bin/Poney.class
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git merge luciehacques
+Updating e414620..eec393c
+Fast-forward
+ JockeyVSPoney/src/lucie.java | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 JockeyVSPoney/src/lucie.java
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git push
+To https://github.com/LucieHacques/TP1Git-do-delete.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/LucieHacques/TP1Git-do-delete.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git pull
+remote: Counting objects: 19, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 19 (delta 7), reused 19 (delta 7), pack-reused 0
+Unpacking objects: 100% (19/19), done.
+From https://github.com/LucieHacques/TP1Git-do-delete
+   e414620..433765c  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ JockeyVSPoney/src/JEsuisUNnouveauFICHIER.txt | 1 +
+ JockeyVSPoney/src/Poney.java                 | 5 ++++-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 JockeyVSPoney/src/JEsuisUNnouveauFICHIER.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git push
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 1020 bytes | 0 bytes/s, done.
+Total 9 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/LucieHacques/TP1Git-do-delete.git
+   433765c..ab0a61c  master -> master
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git checkout luciehacques
+M       JockeyVSPoney/bin/Poney.class
+Switched to branch 'luciehacques'
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git merge master
+Updating eec393c..ab0a61c
+Fast-forward
+ JockeyVSPoney/src/JEsuisUNnouveauFICHIER.txt | 1 +
+ JockeyVSPoney/src/Poney.java                 | 5 ++++-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 JockeyVSPoney/src/JEsuisUNnouveauFICHIER.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git status
+On branch luciehacques
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   bin/Poney.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.metadata/
+        bin/JEsuisUNnouveauFICHIER.txt
+        bin/lucie.class
+        src/fichier.txt
+        ../TP1Git-do-delete/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git add src/fichier.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git commit -m"ajout d'un fichier de même nom"
+[luciehacques d91767f] ajout d'un fichier de même nom
+ 1 file changed, 1 insertion(+)
+ create mode 100644 JockeyVSPoney/src/fichier.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (luciehacques)
+$ git checkout master
+M       JockeyVSPoney/bin/Poney.class
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git merge luciehacques
+Updating ab0a61c..d91767f
+Fast-forward
+ JockeyVSPoney/src/fichier.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 JockeyVSPoney/src/fichier.txt
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git push
+
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 498 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/LucieHacques/TP1Git-do-delete.git
+   ab0a61c..d91767f  master -> master
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git log
+commit d91767f5d208b0cced3a9dfc45eaad339ccc50d7
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 14:41:28 2017 +0100
+
+    ajout d'un fichier de même nom
+
+commit ab0a61ce94b4dd2b2393b85c8e6c54daf19ea511
+Merge: eec393c 433765c
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 14:37:24 2017 +0100
+
+    Merge branch 'master' of https://github.com/LucieHacques/TP1Git-do-delete
+
+commit eec393c7cc8ff57d9738226b9ff2b808f4bf3d78
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 14:36:40 2017 +0100
+
+    ajout d'un nouveau fichier
+
+commit 433765c539e4fc96af7d09fb28b042ac6986d637
+Merge: 7fe0771 c657abd
+Author: Edrenn <edern.rodriguez@orange.fr>
+Date:   Tue Jan 10 14:36:12 2017 +0100
+
+    Merge branch 'rodriguezedern'
+
+commit c657abd77cd2940098ce2340994cbe2fd96912da
+Author: Edrenn <edern.rodriguez@orange.fr>
+Date:   Tue Jan 10 14:36:01 2017 +0100
+
+    Ajout d'un nouveau fichier
+
+commit 7fe0771ae39e584852a8747303e4d10dc335f576
+Merge: a5adabe e414620
+Author: Edrenn <edern.rodriguez@orange.fr>
+Date:   Tue Jan 10 14:33:38 2017 +0100
+
+    jufdsui
+
+commit a5adabe8c3a041c3021582a14535d02a7a771167
+Author: Edrenn <edern.rodriguez@orange.fr>
+Date:   Tue Jan 10 14:31:10 2017 +0100
+
+    modif ouioui
+
+commit e414620a0b3be06f1f05251b46752a280bafb598
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 14:29:15 2017 +0100
+
+    modification d'une ligne
+
+commit b0017f0e4e8ce11ccebfe652519afb27fc1120d7
+Author: Edrenn <edern.rodriguez@orange.fr>
+Date:   Tue Jan 10 14:26:15 2017 +0100
+
+    ajout void
+
+commit 1b2ca9e9e4432124cfeb0ff99eac19be2ee3059c
+Merge: 7e77c8c 0708843
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 14:23:29 2017 +0100
+
+    Merge branch 'master' of https://github.com/LucieHacques/TP1Git-do-delete
+
+commit 7e77c8cdb5062dbf176437292c6a60bee487e77a
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 14:18:52 2017 +0100
+
+    modifi Poney
+
+commit 0708843ab8b26be2cd8d08754820212090cbf8a5
+Author: Edrenn <edern.rodriguez@orange.fr>
+Date:   Tue Jan 10 14:16:21 2017 +0100
+
+    modif poney coucou
+
+commit 284b9c5210742aec4bf4cb02ae3af66bf670180c
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 14:12:07 2017 +0100
+
+    modification Poney
+
+commit d3728792160b13022894e166fa78bce283b2de70
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 13:37:01 2017 +0100
+
+    ajout Edrenn
+
+commit 227b4cedf931efb0ebfea5f9cf93a2517408baae
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 12:18:24 2017 +0100
+
+    add classes Jockey and Poney
+
+commit 7c9282441540b3438b2a8979eb59b1e3d2f5dc27
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:49:37 2017 +0100
+
+    Revert "add subfolder"
+
+    This reverts commit 68e6ff969449f04c59f771840569ff6e9c2adf4d.
+
+commit 68e6ff969449f04c59f771840569ff6e9c2adf4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:39:45 2017 +0100
+
+    add subfolder
+
+commit 2605b0aaf0c310c8ae79dbfd734f17beef01cded
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:11:11 2017 +0100
+
+    Add text to readme
+
+commit 7370689064e72c40a2a48158ca6c717adc539f4d
+Author: lucie.hacques <lucie.hacques@gmail.com>
+Date:   Tue Jan 10 11:05:26 2017 +0100
+
+    Add readme
+(END)
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ ls
+bin/  src/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ cd src
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney/src (master)
+$ ls
+fichier.txt  JEsuisUNnouveauFICHIER.txt  Jockey.java  lucie.java  Poney.java
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney/src (master)
+$ cd ..
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ > .gitignore
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ dir
+bin  src
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ ls
+bin/  src/
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   bin/Poney.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.metadata/
+        .gitignore
+        bin/JEsuisUNnouveauFICHIER.txt
+        bin/lucie.class
+        ../TP1Git-do-delete/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git add .gitignore
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git commit -m"add gitignore"
+[master 0c63027] add gitignore
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 JockeyVSPoney/.gitignore
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   bin/Poney.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.metadata/
+        bin/JEsuisUNnouveauFICHIER.txt
+        bin/lucie.class
+        ../TP1Git-do-delete/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+        modified:   bin/Poney.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.metadata/
+        bin/JEsuisUNnouveauFICHIER.txt
+        bin/lucie.class
+        ../TP1Git-do-delete/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git add -A
+warning: LF will be replaced by CRLF in .metadata/.log.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in .metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.4.0.20130601-0317.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in .metadata/.plugins/org.eclipse.recommenders.rcp/repository/org/eclipse/recommenders/index/0.0.0/index-0.0.0.pom.
+The file will have its original line endings in your working directory.
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git add -A
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git commit -m"reaply gitignore"
+[master 01f62a7] reaply gitignore
+ 90 files changed, 2832 insertions(+)
+ create mode 100644 .metadata/.lock
+ create mode 100644 .metadata/.log
+ create mode 100644 .metadata/.mylyn/.taskListIndex/segments.gen
+ create mode 100644 .metadata/.mylyn/.taskListIndex/segments_1
+ create mode 100644 .metadata/.mylyn/.tasks.xml.zip
+ create mode 100644 .metadata/.mylyn/repositories.xml.zip
+ create mode 100644 .metadata/.mylyn/tasks.xml.zip
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/2f/d0962ea424d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/3a/908abcb139d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/3b/80799fd224d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/4f/90e01fb338d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/52/708cae3d25d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/52/e0e3cbf023d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/68/b07b633625d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/82/a0bcf34036d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/90/e0608be623d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/91/60fa22ac39d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/95/b04782d824d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/98/10a51c3237d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/c1/20c807fa23d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d/c0fb1e0425d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/da/00de960a25d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/dd/a0600c5f24d7001610efe8e5998324e5
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/JockeyVSPoney/.indexes/af/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/JockeyVSPoney/.indexes/e4/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/JockeyVSPoney/.markers.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/JockeyVSPoney/.syncinfo.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/1698454354.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/1705944585.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/1891729548.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/2010425845.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/230131223.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/2394592224.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/2510231558.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/2557198338.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/2799196279.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/2949974689.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/2956956824.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/3067307218.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/3149099997.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/3283978374.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/3548468340.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/3798027613.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/3878781299.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/4237124220.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/474742527.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.launching/.install.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
+ create mode 100644 .metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.4.0.20130601-0317.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/index/_0.fdt
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/index/_0.fdx
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/index/_0.fnm
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/index/_0.frq
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/index/_0.nrm
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/index/_0.prx
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/index/_0.tii
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/index/_0.tis
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/index/segments.gen
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/index/segments_1
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/repository/org/eclipse/recommenders/index/0.0.0/_maven.repositories
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/repository/org/eclipse/recommenders/index/0.0.0/index-0.0.0.pom
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/repository/org/eclipse/recommenders/index/0.0.0/index-0.0.0.pom.etag
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/repository/org/eclipse/recommenders/index/0.0.0/index-0.0.0.zip
+ create mode 100644 .metadata/.plugins/org.eclipse.recommenders.rcp/repository/org/eclipse/recommenders/index/0.0.0/index-0.0.0.zip.etag
+ create mode 100644 .metadata/.plugins/org.eclipse.team.cvs.core/.running
+ create mode 100644 .metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
+ create mode 100644 .metadata/version.ini
+ create mode 100644 JockeyVSPoney/bin/JEsuisUNnouveauFICHIER.txt
+ rewrite JockeyVSPoney/bin/Poney.class (79%)
+ create mode 100644 JockeyVSPoney/bin/lucie.class
+ create mode 160000 TP1Git-do-delete
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ > test.test
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git add -A
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$ git commit -m"reaply gitignore 2"
+[master c0fd81d] reaply gitignore 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 JockeyVSPoney/test.test
+
+Utilisateur@PC-Acer MINGW64 ~/Desktop/TPGIT1/JockeyVSPoney (master)
+$
