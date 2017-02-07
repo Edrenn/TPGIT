@@ -33,6 +33,7 @@ public class Main {
 		String password = "pwd";
 		
 		System.out.println("Connecting database ...");
+
 		
 		try(Connection connection = (Connection) DriverManager.getConnection(url, username, password))
 		{
@@ -54,8 +55,6 @@ public class Main {
 			
 		}
 
-		
-		
 	}
 		
 		

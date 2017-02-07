@@ -43,6 +43,7 @@ public class Droits {
 	}
 
 
+<<<<<<< HEAD
 	
 	
 	@Override
@@ -52,6 +53,10 @@ public class Droits {
 
 
 	public String toJSON() {
+=======
+	@Override
+	public String toString() {
+>>>>>>> dev-test
 		JsonManager jsonmanager = JsonManager.getInstance();
 		jsonmanager.addItem("Droits [niveau=" + niveau + ", severite=" + severite + ", nom=" + nom + ", societe=" + societe + "]");
 		return jsonmanager.toJSON();

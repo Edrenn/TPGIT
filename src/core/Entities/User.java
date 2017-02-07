@@ -58,14 +58,22 @@ public class User {
 	public String toString() {
 		return "User [nom=" + nom + ", prenom=" + prenom + ", login=" + login
 				+ ", motDePasse=" + motDePasse + ", numerodEmployeUnique="
+<<<<<<< HEAD
 				+ numerodEmployeUnique + ", droits=" + droits + "]";
+=======
+				+ ", droits=" + droits + "]";
+>>>>>>> dev-test
 	}
 
 	public String toJson() {
 		JsonManager jsonmanager = JsonManager.getInstance();
 		jsonmanager.addItem("User [nom=" + nom + ", prenom=" + prenom + ", login=" + login
 				+ ", motDePasse=" + motDePasse + ", numerodEmployeUnique="
+<<<<<<< HEAD
 				+ numerodEmployeUnique + ", droits=" + droits + "]");
+=======
+				+ ", droits=" + droits + "]");
+>>>>>>> dev-test
 		
 		return jsonmanager.toJSON();
 	}
