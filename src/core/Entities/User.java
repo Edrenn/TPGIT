@@ -7,18 +7,20 @@ public class User {
 	String prenom;
 	String login;
 	String motDePasse;
+	int numerodEmployeUnique;
 	ArrayList<Droits> droits = new ArrayList();
 	
 	public User() {
 	} 
 
-	public User(String nom, String prenom, String login, String motDePasse, ArrayList<Droits> droits) {
+	public User(String nom, String prenom, String login, String motDePasse, ArrayList<Droits> droits, int numerodEmployeUnique) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
 		this.login = login;
 		this.motDePasse = motDePasse;
 		this.droits = droits;
+		this.numerodEmployeUnique = numerodEmployeUnique;
 	}
 	public String getNom() {
 		return nom;
