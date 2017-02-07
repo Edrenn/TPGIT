@@ -19,7 +19,7 @@ public class Configuration
 	}
 	
 	public Configuration(){
-		
+		//
 	}
 	
 	

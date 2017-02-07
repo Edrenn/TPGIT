@@ -42,7 +42,7 @@ public class JsonManager {
 	private static JsonManager INSTANCE = new JsonManager();
 
 	public static JsonManager getInstance() {
-		return INSTANCE;
+		return INSTANCE;//
 	}
 
 	public String toJSON() {
