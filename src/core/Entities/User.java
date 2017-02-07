@@ -1,16 +1,25 @@
 package core.Entities;
 
+import java.util.ArrayList;
+
 public class User {
 	String nom;
 	String prenom;
 	String login;
 	String motDePasse;
 
-	public User() {
-	} 
+	ArrayList<Droits> droits = new ArrayList();
+	
+	
 
-	arrayList Droits = new arrayList();
-
+	public User(String nom, String prenom, String login, String motDePasse, ArrayList<Droits> droits) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.login = login;
+		this.motDePasse = motDePasse;
+		this.droits = droits;
+	}
 	public String getNom() {
 		return nom;
 	}

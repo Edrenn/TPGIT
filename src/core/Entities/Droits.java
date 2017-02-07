@@ -6,6 +6,15 @@ public class Droits {
 	int sévérité;
 	String nom;
 	String société;
+	
+	public Droits(int niveau, int sévérité, String nom, String société) {
+		super();
+		this.niveau = niveau;
+		this.sévérité = sévérité;
+		this.nom = nom;
+		this.société = société;
+	}
+
 
 	public int getNiveau() {
 		return niveau;
