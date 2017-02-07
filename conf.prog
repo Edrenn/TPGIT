@@ -1,5 +1,7 @@
 {
-	"version":"",
-	"db":"",
-	"conf-version":""
+	"host":"localhost",
+	"port": "3306",
+	"db":"TPGit",
+	"username":"tpgit",
+	"pwd":"pwd"
 }

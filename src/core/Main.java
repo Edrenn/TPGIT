@@ -3,6 +3,8 @@ package core;
 import core.Entities.Droits;
 import core.Entities.User;
 import java.util.ArrayList;
+import core.JsonManager;
+import core.Configuration;
 
 public class Main {
 
@@ -24,6 +26,10 @@ public class Main {
 		
 		User toto = new User("Toto", "Jean", "totoJ", "jeanT", totoDroit);
 		User tata = new User("Tata", "Camille", "tataC", "CamilleT", tataDroit);
+
+		Configuration configuration = new Configuration();
+		JsonManager jsonManager = JsonManager.getInstance();
+		//ArrayList<String> result = jsonManager.readFromFile("conf.prog", "../../", Class<T>);
 		
 	}
 
