@@ -56,3 +56,18 @@ ALTER TABLE Possede ADD CONSTRAINT FK_Possede_droits_id FOREIGN KEY (droits_id) 
 
 GRANT ALL ON TPGit.* TO "tpgit"@"localhost" IDENTIFIED BY "pwd";
 
+#------------------------------------------------------------
+# INSERT
+#------------------------------------------------------------
+
+INSERT INTO Droits VALUES(NULL, 1, 1, "write", "Orange");
+INSERT INTO Droits VALUES(NULL, 1, 0, "read", "Orange");
+INSERT INTO Droits VALUES(NULL, 1, 2, "move", "Orange");
+
+INSERT INTO User VALUES(NULL, "Toto", "Jean", "totoJ", "JeanT");
+INSERT INTO Possede VALUES(1, 1);
+INSERT INTO Possede VALUES(1, 2);
+
+INSERT INTO User VALUES(NULL, "Tata", "Camille", "tataC", "CamilleT");
+INSERT INTO Possede VALUES(2, 2);
+INSERT INTO Possede VALUES(2, 3);
