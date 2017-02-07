@@ -7,12 +7,12 @@ public class Droits {
 	String nom;
 	String societe;
 	
-	public Droits(int niveau, int sévérité, String nom, String société) {
+	public Droits(int niveau, int severite, String nom, String societe) {
 		super();
 		this.niveau = niveau;
-		this.severite = sévérité;
+		this.severite = severite;
 		this.nom = nom;
-		this.societe = société;
+		this.societe = societe;
 	}
 
 
