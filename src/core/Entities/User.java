@@ -1,5 +1,7 @@
 package core.Entities;
 
+import java.util.ArrayList;
+
 public class User {
 	String nom;
 	String prenom;
@@ -9,7 +11,7 @@ public class User {
 	public User() {
 	} 
 
-	arrayList Droits = new arrayList();
+	ArrayList Droits = new ArrayList();
 
 	public String getNom() {
 		return nom;
