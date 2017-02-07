@@ -43,8 +43,15 @@ public class Droits {
 	}
 
 
+	
+	
 	@Override
 	public String toString() {
+		return "Droits [niveau=" + niveau + ", severite=" + severite + ", nom=" + nom + ", societe=" + societe + "]";
+	}
+
+
+	public String toJSON() {
 		JsonManager jsonmanager = JsonManager.getInstance();
 		jsonmanager.addItem("Droits [niveau=" + niveau + ", severite=" + severite + ", nom=" + nom + ", societe=" + societe + "]");
 		return jsonmanager.toJSON();
