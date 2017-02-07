@@ -1,4 +1,5 @@
 package core.Entities;
+import core.JsonManager;
 
 public class Droits {
 
@@ -40,4 +41,16 @@ public class Droits {
 	public void setSociete(String societe) {
 		this.societe = societe;
 	}
+
+
+	@Override
+	public String toString() {
+		JsonManager jsonmanager = JsonManager.getInstance();
+		jsonmanager.addItem("Droits [niveau=" + niveau + ", severite=" + severite + ", nom=" + nom + ", societe=" + societe + "]");
+		return jsonmanager.toJSON();
+	}
+	
+	
+	
+	
 }
