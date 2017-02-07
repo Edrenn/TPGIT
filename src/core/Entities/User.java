@@ -1,6 +1,7 @@
 package core.Entities;
 
 import java.util.ArrayList;
+import core.JsonManager;
 
 public class User {
 	String nom;
@@ -51,6 +52,24 @@ public class User {
 		
 	}
 	
+	
+	
+	@Override
+	public String toString() {
+		return "User [nom=" + nom + ", prenom=" + prenom + ", login=" + login
+				+ ", motDePasse=" + motDePasse + ", numerodEmployeUnique="
+				+ numerodEmployeUnique + ", droits=" + droits + "]";
+	}
+
+	public String toJson() {
+		JsonManager jsonmanager = JsonManager.getInstance();
+		jsonmanager.addItem("User [nom=" + nom + ", prenom=" + prenom + ", login=" + login
+				+ ", motDePasse=" + motDePasse + ", numerodEmployeUnique="
+				+ numerodEmployeUnique + ", droits=" + droits + "]");
+		
+		return jsonmanager.toJSON();
+	}
+
 	public void User(String nom,String prenom,String login,String motDePasse){
 		this.nom = nom;
 		this.prenom = prenom;
