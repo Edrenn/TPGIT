@@ -7,10 +7,10 @@ public class User {
 	String prenom;
 	String login;
 	String motDePasse;
-
 	ArrayList<Droits> droits = new ArrayList();
 	
-	
+	public User() {
+	} 
 
 	public User(String nom, String prenom, String login, String motDePasse, ArrayList<Droits> droits) {
 		super();

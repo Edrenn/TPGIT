@@ -3,30 +3,30 @@ package core.Entities;
 public class Droits {
 
 	int niveau;
-	int sévérité;
+	int severite;
 	String nom;
-	String société;
+	String societe;
 	
 	public Droits(int niveau, int sévérité, String nom, String société) {
 		super();
 		this.niveau = niveau;
-		this.sévérité = sévérité;
+		this.severite = sévérité;
 		this.nom = nom;
-		this.société = société;
+		this.societe = société;
 	}
 
 
 	public int getNiveau() {
 		return niveau;
 	}
-	public void setNiveau(String niveau) {
+	public void setNiveau(int niveau) {
 		this.niveau = niveau;
 	}
-	public int getSévérité() {
-		return sévérité;
+	public int getSeverite() {
+		return severite;
 	}
-	public void setSévérité(String sévérité) {
-		this.sévérité = sévérité;
+	public void setSeverite(int severite) {
+		this.severite = severite;
 	}
 	public String getNom() {
 		return nom;
@@ -34,10 +34,10 @@ public class Droits {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	public String getSociété() {
-		return société;
+	public String getSociete() {
+		return societe;
 	}
-	public void setSociété(String société) {
-		this.société = société;
+	public void setSociete(String societe) {
+		this.societe = societe;
 	}
 }
