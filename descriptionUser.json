@@ -1,0 +1,16 @@
+{
+
+	"Toto":
+	{
+		"prenom": "Jean",
+		"login": "totoJ",
+		"droits": ["write","read"]
+	},
+	
+	"Tata":
+	{
+		"prenom": "Camille",
+		"login": "tataC",
+		"droits": ["read","move"]
+	}
+}
