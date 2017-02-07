@@ -22,8 +22,8 @@ public class Main {
 		tataDroit.add(read);
 		tataDroit.add(move);
 		
-		User toto = new User("Toto", "Jean", "totoJ", "jeanT", totoDroit);
-		User tata = new User("Tata", "Camille", "tataC", "CamilleT", tataDroit);
+		User toto = new User("Toto", "Jean", "totoJ", "jeanT", totoDroit,666);
+		User tata = new User("Tata", "Camille", "tataC", "CamilleT", tataDroit,1);
 		
 	}
 
